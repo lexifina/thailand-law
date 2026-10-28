@@ -1,0 +1,11 @@
+The texts of the laws in this repository are not copyright works under Thai law: section 7 of the Copyright Act
+B.E. 2537 (1994) (พระราชบัญญัติลิขสิทธิ์ พ.ศ. ๒๕๓๗ มาตรา ๗) excludes the Constitution and laws, and regulations,
+rules, announcements, orders and other official texts of the state, from copyright.
+
+Source of the text: the Office of the Council of State (สำนักงานคณะกรรมการกฤษฎีกา), law database
+https://searchlaw.ocs.go.th/council-of-state/ . The OCS publishes no terms of use for the database. Its consolidated
+texts are an aid, not the official text: the official text is the one published in the Royal Gazette
+(ราชกิจจานุเบกษา).
+
+The arrangement of the repository, the commit messages, the tables, the documentation and the scripts in tools/ are
+by Lexifina. The repository is private; reuse terms for them have not been set.

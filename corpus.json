@@ -1,0 +1,41 @@
+{
+  "corpus": "th/national/acts",
+  "name": "Thai law: the Constitution of the Kingdom of Thailand B.E. 2560 (2017) and the Labour Protection Act B.E. 2541 (1998)",
+  "label": "Thailand",
+  "language": "th",
+  "acts": [
+    "รัฐธรรมนูญแห่งราชอาณาจักรไทย",
+    "พระราชบัญญัติคุ้มครองแรงงาน พ.ศ. 2541"
+  ],
+  "history": "in-force",
+  "history_from": "1998-08-19",
+  "record_to": "2025-12-07",
+  "built": "2026-10-28",
+  "checked_on": "2026-10-28",
+  "record_note": "Checked against the Office of the Council of State (searchlaw.ocs.go.th) on 2026-10-28: every consolidated text (ฉบับปรับปรุง) the OCS publishes for these two acts. One text (Labour Protection Act, 2008-02-28) is rebuilt because the OCS consolidated that amendment out of order; see README.",
+  "in_force_trailer": "In-force",
+  "dates": {
+    "commit": "in-force",
+    "other_trailers": [
+      "Promulgated"
+    ],
+    "time": "12:00 Asia/Bangkok (UTC+7, no summer time)"
+  },
+  "scope": {
+    "trailer": "Applies",
+    "when_absent": "this corpus records no scope notes (no commit carries Applies:); the absence is not a statement that the change reaches every case",
+    "default_reach": {
+      "rule": "no retroactive criminal liability or heavier punishment; otherwise an act applies from the day it takes effect, as its own commencement section (มาตรา ๒) and transitional provisions (บทเฉพาะกาล) set",
+      "meaning": "an amendment applies from its in-force day; how it treats earlier facts is set by the amending act's transitional provisions, which this record reprints in the end/ files but does not read as scope data",
+      "authority": "รัฐธรรมนูญแห่งราชอาณาจักรไทย มาตรา 29 (\"มาตรา ๒๙ บุคคลไม่ต้องรับโทษอาญา เว้นแต่ได้กระทำการอันกฎหมายที่ใช้อยู่ในเวลาที่กระทำนั้นบัญญัติเป็นความผิดและกำหนดโทษไว้ และโทษที่จะลงแก่บุคคลนั้นจะหนักกว่าโทษที่บัญญัติไว้ในกฎหมายที่ใช้อยู่ในเวลาที่กระทำความผิดมิได้\")",
+      "decided_here": false
+    }
+  },
+  "tool": "tools/thai.py",
+  "citation": {
+    "file": "([a-z-]+)/s-0*([0-9]+(?:-[0-9]+)?)\\.md",
+    "cites": "มาตรา ?{n}([^0-9/๐-๙]|$)",
+    "n_format": "thai-section: {n} is the section number in Thai digits, with /N for an inserted section: 83 -> ๘๓, 11-1 -> ๑๑/๑"
+  },
+  "has_future_branch": false
+}
