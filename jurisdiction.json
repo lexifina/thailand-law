@@ -1,0 +1,10 @@
+{
+  "path": "th",
+  "code": "TH",
+  "name": "Thailand",
+  "level": "country",
+  "repo": "https://github.com/lexifina/thailand-law",
+  "build": "gazette",
+  "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
+  "register_date": "2026-10-28"
+}
