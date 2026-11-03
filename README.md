@@ -1,7 +1,11 @@
 # Thai law, change by change
 
-Two Thai laws as a git repository: the Constitution of the Kingdom of Thailand B.E. 2560 (2017)
-(รัฐธรรมนูญแห่งราชอาณาจักรไทย) and the Labour Protection Act B.E. 2541 (1998) (พระราชบัญญัติคุ้มครองแรงงาน).
+Thai law as a git repository: the Constitution of the Kingdom of Thailand B.E. 2560 (2017)
+(รัฐธรรมนูญแห่งราชอาณาจักรไทย), the Labour Protection Act B.E. 2541 (1998) (พระราชบัญญัติคุ้มครองแรงงาน), and, appended
+since, the Criminal Code (ประมวลกฎหมายอาญา), the Civil and Commercial Code (ประมวลกฎหมายแพ่งและพาณิชย์), the Civil
+Procedure Code (ประมวลกฎหมายวิธีพิจารณาความแพ่ง), the Criminal Procedure Code (ประมวลกฎหมายวิธีพิจารณาความอาญา) and the
+Labour Relations Act B.E. 2518 (1975) (พระราชบัญญัติแรงงานสัมพันธ์), where each folder is present. The table of acts,
+with their first and last texts, is in [`REPRODUCE.md`](REPRODUCE.md).
 Each amending instrument is one commit, credited to it and dated the day it took effect, at noon in Bangkok. The text
 is the consolidated text published by the Office of the Council of State (สำนักงานคณะกรรมการกฤษฎีกา, the OCS) at
 <https://searchlaw.ocs.go.th/council-of-state/>.
@@ -39,7 +43,7 @@ general act. Its address is made of its Gazette reference, `rg-<volume>-<issue><
 
 The OCS keeps each act as a list of texts: the act as enacted, each amending act, and one consolidated text for each
 day the act changed. A change is credited to the amending act the OCS lists for that day (`Evidence: OCS timeline
-lists this amending act in force this day`). For four days the OCS lists none; there the change is credited to the
+lists this amending act in force this day`). For some days the OCS lists none; there the change is credited to the
 instrument whose provisions that day's consolidation newly reprints at its end, and whose name the changed text's
 footnotes or notes carry (`Evidence: OCS consolidation of this day newly reprints this instrument`). Every change
 commit counts how many of the changed files name the instrument (`Files-naming-it:`).
@@ -69,7 +73,10 @@ is a marker `[^n]` and a line `[^n]: ...` at the end of the file. The text keeps
 - Only what the OCS consolidates. Its consolidations are not the official text: the Royal Gazette is.
 - Changes by instruments that do not alter the words (a ministerial regulation made under the act, a court ruling)
   are not here.
-- The text before the Constitution of 2017 and other acts are not here.
+- The text before the Constitution of 2017 is not here, nor any act without a folder.
+- The history is append-only: acts added after the first build come after it in `git log`, each in in-force order.
+  Days before 1970 are dated 1 January 1970 in git (it cannot store earlier dates); the `In-force:` trailer has the
+  real day.
 
 ## How it is checked
 
@@ -80,4 +87,4 @@ file by file and, independently of the parser, letter by letter against the raw 
 ## Licence
 
 The texts of Thai acts are not copyright works (Copyright Act B.E. 2537, section 7). The arrangement, scripts and
-documentation are by Lexifina; see [LICENSE](LICENSE). This repository is private.
+documentation are by Lexifina; see [LICENSE](LICENSE).
