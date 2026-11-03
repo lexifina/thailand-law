@@ -25,6 +25,7 @@ runs when the repository is built.
 | `civil-commercial-code` | ประมวลกฎหมายแพ่งและพาณิชย์ | Civil and Commercial Code | 38 | 1926-01-01 | 2025-03-25 |
 | `civil-procedure-code` | ประมวลกฎหมายวิธีพิจารณาความแพ่ง | Civil Procedure Code | 35 | 1935-06-20 | 2025-09-10 |
 | `criminal-procedure-code` | ประมวลกฎหมายวิธีพิจารณาความอาญา | Criminal Procedure Code | 41 | 1935-10-01 | 2019-03-21 |
+| `land-code` | ประมวลกฎหมายที่ดิน | Land Code | 22 | 1954-12-01 | 2019-11-21 |
 
 ## Growth
 
@@ -33,9 +34,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 41 law commits for criminal-procedure-code, and 1 documentation commit.
-- check_repo: 38 texts (12248 files), 0 mismatches; 27 texts word for word (3184012 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (36 commits).
+- This growth (2026-11-03): 22 law commits for land-code, and 1 documentation commit.
+- check_repo: 22 texts (3349 files), 0 mismatches; 22 texts word for word (1556063 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = true (42 commits).
 
 ## Decisions made by hand
 
