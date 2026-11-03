@@ -68,6 +68,24 @@ amending instrument, the provisions of it the OCS reprints (its commencement and
 note. Each paragraph is one line. A footnote of the OCS (the Gazette reference, or the note naming the amending act)
 is a marker `[^n]` and a line `[^n]: ...` at the end of the file. The text keeps Thai digits, as published.
 
+### The codes
+
+The four codes (ประมวลกฎหมาย) are laid out the same way. Their `title.md` holds everything the OCS prints before the
+code's own text: the act or decree that brings it into force, with its sections, its countersignature, the table of
+contents and the code's title. Book, part, title, chapter and division headings (บรรพ, ภาค, ลักษณะ, หมวด, ส่วน) are
+`##`/`###` lines at the top of the section they begin. Sections numbered in the older style are `s-157-bis.md`
+(มาตรา ๑๕๗ ทวิ), `-ter` (ตรี), `-quater` (จัตวา) and so on; `python tools/thai.py <day> criminal-code "157 ทวิ"` reads
+one. A repealed range the OCS prints as one entry is `s-1274-to-1297.md`.
+
+- **Several instruments on one day.** Each is its own commit, in the order the OCS consolidated them; tags are
+  `<act>/<day>`, `<act>/<day>.2`, ... The day's text is the last of them.
+- **Amendments consolidated out of order.** Where the OCS consolidated an amendment after one that took effect later,
+  each consolidation's own changes are applied in the order they took effect (the commit says `Text: rebuilt ...`).
+  Where two such amendments change the same paragraphs, that file keeps its earlier text until both are in force.
+- **Days before 1941.** Until B.E. 2483 the Thai year began on 1 April. The OCS converts 1 January to 31 March of
+  those years one year early (it has the Civil and Commercial Code in force on 1925-01-01, before its promulgation on
+  11 November 1925); here those days are moved to the right year (1926-01-01).
+
 ## What it does not show
 
 - Only what the OCS consolidates. Its consolidations are not the official text: the Royal Gazette is.

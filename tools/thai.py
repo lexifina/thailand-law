@@ -42,26 +42,29 @@ def commit_on(day: str, act: str) -> str | None:
 
 
 LATIN = {'ทวิ': 'bis', 'ตรี': 'ter', 'จัตวา': 'quater', 'เบญจ': 'quinquies', 'ฉ': 'sexies', 'สัตต': 'septies',
-         'อัฏฐ': 'octies', 'นว': 'novies', 'ทศ': 'decies'}
-ORDER = {v: i + 2 for i, v in enumerate(LATIN.values())}
+         'อัฏฐ': 'octies', 'อัฎฐ': 'octies', 'นว': 'novies', 'ทศ': 'decies'}
+ORDER = {v: i + 2 for i, v in enumerate(['bis', 'ter', 'quater', 'quinquies', 'sexies', 'septies', 'octies', 'novies',
+                                          'decies'])}
+KEY = re.compile(r's-(\d+)(?:-(\d+))?(?:-(bis|ter|quater|quinquies|sexies|septies|octies|novies|decies))?'
+                 r'(?:-(\d+))?(?:-to-(\d+)(?:-(\d+))?)?')
 
 
 def key_of(section: str) -> str:
-    """'83' -> s-083, '11/1' -> s-011-1, '157 ทวิ' or '157bis' -> s-157-bis."""
-    m = re.fullmatch(r'(\d+)(?:/(\d+))?\s*([a-z]+|' + '|'.join(LATIN) + r')?', section.strip())
+    """'83' -> s-083, '11/1' -> s-011-1, '157 ทวิ' or '157bis' -> s-157-bis, '172 ทวิ/1' -> s-172-bis-1."""
+    m = re.fullmatch(r'(\d+)(?:/(\d+))?\s*([a-z]+|' + '|'.join(LATIN) + r')?(?:/(\d+))?', section.strip())
     if not m:
         return section
     suffix = LATIN.get(m.group(3), m.group(3))
-    return f's-{int(m.group(1)):03d}' + (f'-{m.group(2)}' if m.group(2) else '') + (f'-{suffix}' if suffix else '')
+    return f's-{int(m.group(1)):03d}' + (f'-{m.group(2)}' if m.group(2) else '') + (f'-{suffix}' if suffix else '')         + (f'-{m.group(4)}' if m.group(4) else '')
 
 
 def order(path: str) -> tuple:
     name = path.rsplit('/', 1)[-1][:-3] if path.count('/') == 1 else path.split('/', 1)[1][:-3]
     if name == 'title':
         return (0,)
-    m = re.fullmatch(r's-(\d+)(?:-(\d+))?(?:-([a-z]+))?', name)
+    m = KEY.fullmatch(name)
     if m:
-        return (1, int(m.group(1)), int(m.group(2) or 0), ORDER.get(m.group(3) or '', 0))
+        return (1, int(m.group(1)), int(m.group(2) or 0), ORDER.get(m.group(3) or '', 0), int(m.group(4) or 0))
     m = re.fullmatch(r'end/(\d+)', name)
     if m:
         return (2, int(m.group(1)))
