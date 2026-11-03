@@ -44,6 +44,12 @@ runs when the repository is built.
 | `administrative-courts` | พระราชบัญญัติจัดตั้งศาลปกครองและวิธีพิจารณาคดีปกครอง พ.ศ. 2542 | Act on Establishment of Administrative Courts and Administrative Court Procedure, B.E. 2542 (1999) | 16 | 1999-10-11 | 2021-05-27 |
 | `narcotics-code` | ประมวลกฎหมายยาเสพติด | Narcotics Code | 1 | 2021-11-09 | 2021-11-09 |
 | `labour-court` | พระราชบัญญัติจัดตั้งศาลแรงงานและวิธีพิจารณาคดีแรงงาน พ.ศ. 2522 | Act on Establishment of Labour Courts and Labour Court Procedure, B.E. 2522 (1979) | 4 | 1979-05-12 | 2022-05-24 |
+| `workmen-compensation` | พระราชบัญญัติเงินทดแทน พ.ศ. 2537 | Workmen's Compensation Act, B.E. 2537 (1994) | 3 | 1994-07-01 | 2018-12-09 |
+| `alien-working` | พระราชกำหนดการบริหารจัดการการทำงานของคนต่างด้าว พ.ศ. 2560 | Royal Ordinance on Management of Foreign Workers, B.E. 2560 (2017) | 3 | 2017-06-23 | 2018-03-28 |
+| `nationality` | พระราชบัญญัติสัญชาติ พ.ศ.2508 | Nationality Act, B.E. 2508 (1965) | 5 | 1965-08-05 | 2012-03-22 |
+| `civil-registration` | พระราชบัญญัติการทะเบียนราษฎร พ.ศ. 2534 | Civil Registration Act, B.E. 2534 (1991) | 4 | 1992-03-22 | 2019-04-15 |
+| `anti-money-laundering` | พระราชบัญญัติป้องกันและปราบปรามการฟอกเงิน พ.ศ. 2542 | Anti-Money Laundering Act, B.E. 2542 (1999) | 9 | 1999-08-19 | 2022-12-24 |
+| `land-traffic` | พระราชบัญญัติจราจรทางบก พ.ศ. 2522 | Land Traffic Act, B.E. 2522 (1979) | 17 | 1979-04-29 | 2022-10-25 |
 
 ## Growth
 
@@ -52,9 +58,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 35 law commits for administrative-courts, administrative-procedure, electronic-transactions, labour-court, narcotics-code, trademark, and 1 documentation commit.
-- check_repo: 35 texts (4065 files), 0 mismatches; 35 texts word for word (2354427 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (31 commits).
+- This growth (2026-11-03): 41 law commits for alien-working, anti-money-laundering, civil-registration, land-traffic, nationality, workmen-compensation, and 1 documentation commit.
+- check_repo: 37 texts (4691 files), 0 mismatches; 37 texts word for word (2068849 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = true (36 commits).
 
 ## Decisions made by hand
 
