@@ -50,6 +50,12 @@ runs when the repository is built.
 | `civil-registration` | พระราชบัญญัติการทะเบียนราษฎร พ.ศ. 2534 | Civil Registration Act, B.E. 2534 (1991) | 4 | 1992-03-22 | 2019-04-15 |
 | `anti-money-laundering` | พระราชบัญญัติป้องกันและปราบปรามการฟอกเงิน พ.ศ. 2542 | Anti-Money Laundering Act, B.E. 2542 (1999) | 9 | 1999-08-19 | 2022-12-24 |
 | `land-traffic` | พระราชบัญญัติจราจรทางบก พ.ศ. 2522 | Land Traffic Act, B.E. 2522 (1979) | 17 | 1979-04-29 | 2022-10-25 |
+| `building-control` | พระราชบัญญัติควบคุมอาคาร พ.ศ. 2522 | Building Control Act, B.E. 2522 (1979) | 7 | 1979-05-15 | 2023-10-25 |
+| `condominium` | พระราชบัญญัติอาคารชุด พ.ศ. 2522 | Condominium Act, B.E. 2522 (1979) | 5 | 1979-10-27 | 2017-02-12 |
+| `investment-promotion` | พระราชบัญญัติส่งเสริมการลงทุน พ.ศ. 2520 | Investment Promotion Act, B.E. 2520 (1977) | 6 | 1977-05-05 | 2017-01-25 |
+| `juvenile-family-court` | พระราชบัญญัติศาลเยาวชนและครอบครัวและวิธีพิจารณาคดีเยาวชนและครอบครัว พ.ศ. 2553 | Juvenile and Family Court and Procedure Act, B.E. 2553 (2010) | 7 | 2011-05-21 | 2023-10-25 |
+| `official-information` | พระราชบัญญัติข้อมูลข่าวสารของราชการ พ.ศ. 2540 | Official Information Act, B.E. 2540 (1997) | 1 | 1997-12-09 | 1997-12-09 |
+| `arbitration` | พระราชบัญญัติอนุญาโตตุลาการ พ.ศ. 2545 | Arbitration Act, B.E. 2545 (2002) | 2 | 2002-04-30 | 2019-04-15 |
 
 ## Growth
 
@@ -58,9 +64,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 41 law commits for alien-working, anti-money-laundering, civil-registration, land-traffic, nationality, workmen-compensation, and 1 documentation commit.
-- check_repo: 37 texts (4691 files), 0 mismatches; 37 texts word for word (2068849 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (36 commits).
+- This growth (2026-11-03): 28 law commits for arbitration, building-control, condominium, investment-promotion, juvenile-family-court, official-information, and 1 documentation commit.
+- check_repo: 28 texts (3326 files), 0 mismatches; 28 texts word for word (1789478 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = true (42 commits).
 
 ## Decisions made by hand
 
