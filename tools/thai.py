@@ -42,16 +42,20 @@ def commit_on(day: str, act: str) -> str | None:
 
 
 LATIN = {'ทวิ': 'bis', 'ตรี': 'ter', 'จัตวา': 'quater', 'เบญจ': 'quinquies', 'ฉ': 'sexies', 'สัตต': 'septies',
-         'อัฏฐ': 'octies', 'อัฎฐ': 'octies', 'นว': 'novies', 'ทศ': 'decies'}
-ORDER = {v: i + 2 for i, v in enumerate(['bis', 'ter', 'quater', 'quinquies', 'sexies', 'septies', 'octies', 'novies',
-                                          'decies'])}
-KEY = re.compile(r's-(\d+)(?:-(\d+))?(?:-(bis|ter|quater|quinquies|sexies|septies|octies|novies|decies))?'
-                 r'(?:-(\d+))?(?:-to-(\d+)(?:-(\d+))?)?')
+         'อัฏฐ': 'octies', 'อัฎฐ': 'octies', 'นว': 'novies', 'ทศ': 'decies', 'เอกาทศ': 'undecies',
+         'ทวาทศ': 'duodecies', 'เตรส': 'terdecies', 'จตุทศ': 'quaterdecies', 'ปัณรส': 'quindecies',
+         'โสฬส': 'sexdecies', 'สัตตรส': 'septdecies', 'อัฏฐารส': 'octodecies'}
+NAMES = ['bis', 'ter', 'quater', 'quinquies', 'sexies', 'septies', 'octies', 'novies', 'decies', 'undecies',
+         'duodecies', 'terdecies', 'quaterdecies', 'quindecies', 'sexdecies', 'septdecies', 'octodecies']
+ORDER = {v: i + 2 for i, v in enumerate(NAMES)}
+KEY = re.compile(r's-(\d+)(?:-(\d+))?(?:-(' + '|'.join(NAMES) + r'))?(?:-(\d+))?(?:-to-(\d+)(?:-(\d+))?)?'
+                 r'(?:-n(\d+))?')
 
 
 def key_of(section: str) -> str:
     """'83' -> s-083, '11/1' -> s-011-1, '157 ทวิ' or '157bis' -> s-157-bis, '172 ทวิ/1' -> s-172-bis-1."""
-    m = re.fullmatch(r'(\d+)(?:/(\d+))?\s*([a-z]+|' + '|'.join(LATIN) + r')?(?:/(\d+))?', section.strip())
+    m = re.fullmatch(r'(\d+)(?:/(\d+))?\s*([a-z]+|' + '|'.join(sorted(LATIN, key=len, reverse=True)) + r')?(?:/(\d+))?',
+                     section.strip())
     if not m:
         return section
     suffix = LATIN.get(m.group(3), m.group(3))
@@ -64,7 +68,8 @@ def order(path: str) -> tuple:
         return (0,)
     m = KEY.fullmatch(name)
     if m:
-        return (1, int(m.group(1)), int(m.group(2) or 0), ORDER.get(m.group(3) or '', 0), int(m.group(4) or 0))
+        return (1, int(m.group(1)), int(m.group(2) or 0), ORDER.get(m.group(3) or '', 0), int(m.group(4) or 0),
+                int(m.group(7) or 0))
     m = re.fullmatch(r'end/(\d+)', name)
     if m:
         return (2, int(m.group(1)))

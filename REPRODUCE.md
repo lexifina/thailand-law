@@ -22,6 +22,7 @@ runs when the repository is built.
 | `labour-protection` | พระราชบัญญัติคุ้มครองแรงงาน พ.ศ. 2541 | Labour Protection Act, B.E. 2541 (1998) | 13 | 1998-08-19 | 2025-12-07 |
 | `labour-relations` | พระราชบัญญัติแรงงานสัมพันธ์ พ.ศ. 2518 | Labour Relations Act, B.E. 2518 (1975) | 6 | 1975-03-28 | 2023-10-25 |
 | `criminal-code` | ประมวลกฎหมายอาญา | Criminal Code | 35 | 1956-11-16 | 2025-12-30 |
+| `civil-commercial-code` | ประมวลกฎหมายแพ่งและพาณิชย์ | Civil and Commercial Code | 38 | 1926-01-01 | 2025-03-25 |
 
 ## Growth
 
@@ -30,9 +31,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 35 law commits for criminal-code, and 1 documentation commit.
-- check_repo: 51 texts (17665 files), 0 mismatches; 50 texts word for word (6457275 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (7 commits).
+- This growth (2026-11-03): 38 law commits for civil-commercial-code, and 1 documentation commit.
+- check_repo: 35 texts (60508 files), 0 mismatches; 33 texts word for word (15590785 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = false (39 commits).
 
 ## Decisions made by hand
 
