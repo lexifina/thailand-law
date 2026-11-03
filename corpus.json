@@ -1,6 +1,6 @@
 {
   "corpus": "th/national/acts",
-  "name": "Thai law: Constitution of the Kingdom of Thailand, B.E. 2560 (2017); Labour Protection Act, B.E. 2541 (1998); Labour Relations Act, B.E. 2518 (1975); Criminal Code; Civil and Commercial Code; Civil Procedure Code",
+  "name": "Thai law: Constitution of the Kingdom of Thailand, B.E. 2560 (2017); Labour Protection Act, B.E. 2541 (1998); Labour Relations Act, B.E. 2518 (1975); Criminal Code; Civil and Commercial Code; Civil Procedure Code; Criminal Procedure Code",
   "label": "Thailand",
   "language": "th",
   "acts": [
@@ -9,14 +9,15 @@
     "พระราชบัญญัติแรงงานสัมพันธ์ พ.ศ. 2518",
     "ประมวลกฎหมายอาญา",
     "ประมวลกฎหมายแพ่งและพาณิชย์",
-    "ประมวลกฎหมายวิธีพิจารณาความแพ่ง"
+    "ประมวลกฎหมายวิธีพิจารณาความแพ่ง",
+    "ประมวลกฎหมายวิธีพิจารณาความอาญา"
   ],
   "history": "in-force",
   "history_from": "1926-01-01",
   "record_to": "2025-12-30",
   "built": "2026-11-03",
   "checked_on": "2026-11-03",
-  "record_note": "Checked against the Office of the Council of State (searchlaw.ocs.go.th) on 2026-11-03: every consolidated text (ฉบับปรับปรุง) the OCS publishes for these 6 acts. Texts the OCS consolidated out of order are rebuilt; see README.",
+  "record_note": "Checked against the Office of the Council of State (searchlaw.ocs.go.th) on 2026-11-03: every consolidated text (ฉบับปรับปรุง) the OCS publishes for these 7 acts. Texts the OCS consolidated out of order are rebuilt; see README.",
   "in_force_trailer": "In-force",
   "dates": {
     "commit": "in-force",
