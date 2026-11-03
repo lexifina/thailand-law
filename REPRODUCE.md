@@ -38,6 +38,12 @@ runs when the repository is built.
 | `trade-competition` | พระราชบัญญัติการแข่งขันทางการค้า พ.ศ. 2560 | Trade Competition Act, B.E. 2560 (2017) | 1 | 2017-10-05 | 2017-10-05 |
 | `copyright` | พระราชบัญญัติลิขสิทธิ์ พ.ศ. 2537 | Copyright Act, B.E. 2537 (1994) | 7 | 1995-03-21 | 2022-08-23 |
 | `patent` | พระราชบัญญัติสิทธิบัตร พ.ศ. 2522 | Patent Act, B.E. 2522 (1979) | 5 | 1979-09-12 | 2019-01-28 |
+| `trademark` | พระราชบัญญัติเครื่องหมายการค้า พ.ศ. 2534 | Trademark Act, B.E. 2534 (1991) | 4 | 1992-02-13 | 2023-10-25 |
+| `electronic-transactions` | พระราชบัญญัติว่าด้วยธุรกรรมทางอิเล็กทรอนิกส์ พ.ศ. 2544 | Electronic Transactions Act, B.E. 2544 (2001) | 7 | 2002-04-03 | 2023-10-25 |
+| `administrative-procedure` | พระราชบัญญัติวิธีปฏิบัติราชการทางปกครอง พ.ศ. 2539 | Administrative Procedure Act, B.E. 2539 (1996) | 3 | 1997-05-13 | 2019-05-28 |
+| `administrative-courts` | พระราชบัญญัติจัดตั้งศาลปกครองและวิธีพิจารณาคดีปกครอง พ.ศ. 2542 | Act on Establishment of Administrative Courts and Administrative Court Procedure, B.E. 2542 (1999) | 16 | 1999-10-11 | 2021-05-27 |
+| `narcotics-code` | ประมวลกฎหมายยาเสพติด | Narcotics Code | 1 | 2021-11-09 | 2021-11-09 |
+| `labour-court` | พระราชบัญญัติจัดตั้งศาลแรงงานและวิธีพิจารณาคดีแรงงาน พ.ศ. 2522 | Act on Establishment of Labour Courts and Labour Court Procedure, B.E. 2522 (1979) | 4 | 1979-05-12 | 2022-05-24 |
 
 ## Growth
 
@@ -46,9 +52,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 30 law commits for copyright, foreign-business, immigration, patent, securities-exchange, trade-competition, and 1 documentation commit.
-- check_repo: 28 texts (4565 files), 0 mismatches; 28 texts word for word (2059825 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (39 commits).
+- This growth (2026-11-03): 35 law commits for administrative-courts, administrative-procedure, electronic-transactions, labour-court, narcotics-code, trademark, and 1 documentation commit.
+- check_repo: 35 texts (4065 files), 0 mismatches; 35 texts word for word (2354427 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = true (31 commits).
 
 ## Decisions made by hand
 
