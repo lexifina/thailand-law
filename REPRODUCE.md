@@ -26,6 +26,12 @@ runs when the repository is built.
 | `civil-procedure-code` | ประมวลกฎหมายวิธีพิจารณาความแพ่ง | Civil Procedure Code | 35 | 1935-06-20 | 2025-09-10 |
 | `criminal-procedure-code` | ประมวลกฎหมายวิธีพิจารณาความอาญา | Criminal Procedure Code | 41 | 1935-10-01 | 2019-03-21 |
 | `land-code` | ประมวลกฎหมายที่ดิน | Land Code | 22 | 1954-12-01 | 2019-11-21 |
+| `social-security` | พระราชบัญญัติประกันสังคม พ.ศ. 2533 | Social Security Act, B.E. 2533 (1990) | 8 | 1990-09-02 | 2023-10-25 |
+| `public-limited-companies` | พระราชบัญญัติบริษัทมหาชนจำกัด พ.ศ. 2535 | Public Limited Companies Act, B.E. 2535 (1992) | 7 | 1992-06-07 | 2023-10-25 |
+| `bankruptcy` | พระราชบัญญัติล้มละลาย พุทธศักราช 2483 | Bankruptcy Act, B.E. 2483 (1940) | 12 | 1941-01-01 | 2023-10-25 |
+| `computer-crime` | พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2550 | Computer Crime Act, B.E. 2550 (2007) | 3 | 2007-07-18 | 2023-10-25 |
+| `personal-data-protection` | พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 | Personal Data Protection Act, B.E. 2562 (2019) | 1 | 2019-05-28 | 2019-05-28 |
+| `consumer-protection` | พระราชบัญญัติคุ้มครองผู้บริโภค พ.ศ. 2522 | Consumer Protection Act, B.E. 2522 (1979) | 7 | 1979-05-05 | 2023-10-25 |
 
 ## Growth
 
@@ -34,9 +40,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 22 law commits for land-code, and 1 documentation commit.
-- check_repo: 22 texts (3349 files), 0 mismatches; 22 texts word for word (1556063 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (42 commits).
+- This growth (2026-11-03): 38 law commits for bankruptcy, computer-crime, consumer-protection, personal-data-protection, public-limited-companies, social-security, and 1 documentation commit.
+- check_repo: 37 texts (6806 files), 0 mismatches; 37 texts word for word (3081341 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = true (23 commits).
 
 ## Decisions made by hand
 
