@@ -32,6 +32,12 @@ runs when the repository is built.
 | `computer-crime` | พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2550 | Computer Crime Act, B.E. 2550 (2007) | 3 | 2007-07-18 | 2023-10-25 |
 | `personal-data-protection` | พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 | Personal Data Protection Act, B.E. 2562 (2019) | 1 | 2019-05-28 | 2019-05-28 |
 | `consumer-protection` | พระราชบัญญัติคุ้มครองผู้บริโภค พ.ศ. 2522 | Consumer Protection Act, B.E. 2522 (1979) | 7 | 1979-05-05 | 2023-10-25 |
+| `foreign-business` | พระราชบัญญัติการประกอบธุรกิจของคนต่างด้าว พ.ศ. 2542 | Foreign Business Act, B.E. 2542 (1999) | 4 | 2000-03-03 | 2026-09-29 |
+| `immigration` | พระราชบัญญัติคนเข้าเมือง พ.ศ. 2522 | Immigration Act, B.E. 2522 (1979) | 7 | 1979-05-30 | 2018-03-28 |
+| `securities-exchange` | พระราชบัญญัติหลักทรัพย์และตลาดหลักทรัพย์ พ.ศ. 2535 | Securities and Exchange Act, B.E. 2535 (1992) | 6 | 1992-05-15 | 2019-04-17 |
+| `trade-competition` | พระราชบัญญัติการแข่งขันทางการค้า พ.ศ. 2560 | Trade Competition Act, B.E. 2560 (2017) | 1 | 2017-10-05 | 2017-10-05 |
+| `copyright` | พระราชบัญญัติลิขสิทธิ์ พ.ศ. 2537 | Copyright Act, B.E. 2537 (1994) | 7 | 1995-03-21 | 2022-08-23 |
+| `patent` | พระราชบัญญัติสิทธิบัตร พ.ศ. 2522 | Patent Act, B.E. 2522 (1979) | 5 | 1979-09-12 | 2019-01-28 |
 
 ## Growth
 
@@ -40,9 +46,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 38 law commits for bankruptcy, computer-crime, consumer-protection, personal-data-protection, public-limited-companies, social-security, and 1 documentation commit.
-- check_repo: 37 texts (6806 files), 0 mismatches; 37 texts word for word (3081341 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (23 commits).
+- This growth (2026-11-03): 30 law commits for copyright, foreign-business, immigration, patent, securities-exchange, trade-competition, and 1 documentation commit.
+- check_repo: 28 texts (4565 files), 0 mismatches; 28 texts word for word (2059825 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = true (39 commits).
 
 ## Decisions made by hand
 

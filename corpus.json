@@ -1,6 +1,6 @@
 {
   "corpus": "th/national/acts",
-  "name": "Thai law: Constitution of the Kingdom of Thailand, B.E. 2560 (2017); Labour Protection Act, B.E. 2541 (1998); Labour Relations Act, B.E. 2518 (1975); Criminal Code; Civil and Commercial Code; Civil Procedure Code; Criminal Procedure Code; Land Code; Social Security Act, B.E. 2533 (1990); Public Limited Companies Act, B.E. 2535 (1992); Bankruptcy Act, B.E. 2483 (1940); Computer Crime Act, B.E. 2550 (2007); Personal Data Protection Act, B.E. 2562 (2019); Consumer Protection Act, B.E. 2522 (1979)",
+  "name": "Thai law: Constitution of the Kingdom of Thailand, B.E. 2560 (2017); Labour Protection Act, B.E. 2541 (1998); Labour Relations Act, B.E. 2518 (1975); Criminal Code; Civil and Commercial Code; Civil Procedure Code; Criminal Procedure Code; Land Code; Social Security Act, B.E. 2533 (1990); Public Limited Companies Act, B.E. 2535 (1992); Bankruptcy Act, B.E. 2483 (1940); Computer Crime Act, B.E. 2550 (2007); Personal Data Protection Act, B.E. 2562 (2019); Consumer Protection Act, B.E. 2522 (1979); Foreign Business Act, B.E. 2542 (1999); Immigration Act, B.E. 2522 (1979); Securities and Exchange Act, B.E. 2535 (1992); Trade Competition Act, B.E. 2560 (2017); Copyright Act, B.E. 2537 (1994); Patent Act, B.E. 2522 (1979)",
   "label": "Thailand",
   "language": "th",
   "acts": [
@@ -17,14 +17,20 @@
     "พระราชบัญญัติล้มละลาย พุทธศักราช 2483",
     "พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2550",
     "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562",
-    "พระราชบัญญัติคุ้มครองผู้บริโภค พ.ศ. 2522"
+    "พระราชบัญญัติคุ้มครองผู้บริโภค พ.ศ. 2522",
+    "พระราชบัญญัติการประกอบธุรกิจของคนต่างด้าว พ.ศ. 2542",
+    "พระราชบัญญัติคนเข้าเมือง พ.ศ. 2522",
+    "พระราชบัญญัติหลักทรัพย์และตลาดหลักทรัพย์ พ.ศ. 2535",
+    "พระราชบัญญัติการแข่งขันทางการค้า พ.ศ. 2560",
+    "พระราชบัญญัติลิขสิทธิ์ พ.ศ. 2537",
+    "พระราชบัญญัติสิทธิบัตร พ.ศ. 2522"
   ],
   "history": "in-force",
   "history_from": "1926-01-01",
-  "record_to": "2025-12-30",
+  "record_to": "2026-09-29",
   "built": "2026-11-03",
   "checked_on": "2026-11-03",
-  "record_note": "Checked against the Office of the Council of State (searchlaw.ocs.go.th) on 2026-11-03: every consolidated text (ฉบับปรับปรุง) the OCS publishes for these 14 acts. Texts the OCS consolidated out of order are rebuilt; see README.",
+  "record_note": "Checked against the Office of the Council of State (searchlaw.ocs.go.th) on 2026-11-03: every consolidated text (ฉบับปรับปรุง) the OCS publishes for these 20 acts. Texts the OCS consolidated out of order are rebuilt; see README.",
   "in_force_trailer": "In-force",
   "dates": {
     "commit": "in-force",
