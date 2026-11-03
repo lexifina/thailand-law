@@ -56,6 +56,9 @@ runs when the repository is built.
 | `juvenile-family-court` | พระราชบัญญัติศาลเยาวชนและครอบครัวและวิธีพิจารณาคดีเยาวชนและครอบครัว พ.ศ. 2553 | Juvenile and Family Court and Procedure Act, B.E. 2553 (2010) | 7 | 2011-05-21 | 2023-10-25 |
 | `official-information` | พระราชบัญญัติข้อมูลข่าวสารของราชการ พ.ศ. 2540 | Official Information Act, B.E. 2540 (1997) | 1 | 1997-12-09 | 1997-12-09 |
 | `arbitration` | พระราชบัญญัติอนุญาโตตุลาการ พ.ศ. 2545 | Arbitration Act, B.E. 2545 (2002) | 2 | 2002-04-30 | 2019-04-15 |
+| `cheque-offences` | พระราชบัญญัติว่าด้วยความผิดอันเกิดจากการใช้เช็ค พ.ศ. 2534 | Act on Offences Arising from the Use of Cheques, B.E. 2534 (1991) | 1 | 1991-08-28 | 1991-08-28 |
+| `drugs` | พระราชบัญญัติยา พ.ศ. 2510 | Drug Act, B.E. 2510 (1967) | 7 | 1967-12-19 | 2019-10-13 |
+| `firearms` | พระราชบัญญัติอาวุธปืน เครื่องกระสุนปืน วัตถุระเบิด และดอกไม้เพลิง พุทธศักราช 2477 (ยกเลิก) | Firearms Act, B.E. 2490 (1947) | 1 | 1934-08-19 | 1934-08-19 |
 
 ## Growth
 
@@ -64,9 +67,9 @@ act's commits in in-force order, so `git log` order is not date order across act
 trailer (tools/thai.py does). Commits for days before 1970 carry the date 1 January 1970 (git cannot store
 earlier dates) and say so in the message.
 
-- This growth (2026-11-03): 28 law commits for arbitration, building-control, condominium, investment-promotion, juvenile-family-court, official-information, and 1 documentation commit.
-- check_repo: 28 texts (3326 files), 0 mismatches; 28 texts word for word (1789478 letters), 0 mismatches.
-- Second append from the same head into a scratch clone: identical = true (42 commits).
+- This growth (2026-11-03): 9 law commits for cheque-offences, drugs, firearms, and 1 documentation commit.
+- check_repo: 9 texts (1062 files), 0 mismatches; 9 texts word for word (412577 letters), 0 mismatches.
+- Second append from the same head into a scratch clone: identical = true (29 commits).
 
 ## Decisions made by hand
 

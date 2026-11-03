@@ -1,6 +1,6 @@
 {
   "corpus": "th/national/acts",
-  "name": "Thai law: Constitution of the Kingdom of Thailand, B.E. 2560 (2017); Labour Protection Act, B.E. 2541 (1998); Labour Relations Act, B.E. 2518 (1975); Criminal Code; Civil and Commercial Code; Civil Procedure Code; Criminal Procedure Code; Land Code; Social Security Act, B.E. 2533 (1990); Public Limited Companies Act, B.E. 2535 (1992); Bankruptcy Act, B.E. 2483 (1940); Computer Crime Act, B.E. 2550 (2007); Personal Data Protection Act, B.E. 2562 (2019); Consumer Protection Act, B.E. 2522 (1979); Foreign Business Act, B.E. 2542 (1999); Immigration Act, B.E. 2522 (1979); Securities and Exchange Act, B.E. 2535 (1992); Trade Competition Act, B.E. 2560 (2017); Copyright Act, B.E. 2537 (1994); Patent Act, B.E. 2522 (1979); Trademark Act, B.E. 2534 (1991); Electronic Transactions Act, B.E. 2544 (2001); Administrative Procedure Act, B.E. 2539 (1996); Act on Establishment of Administrative Courts and Administrative Court Procedure, B.E. 2542 (1999); Narcotics Code; Act on Establishment of Labour Courts and Labour Court Procedure, B.E. 2522 (1979); Workmen's Compensation Act, B.E. 2537 (1994); Royal Ordinance on Management of Foreign Workers, B.E. 2560 (2017); Nationality Act, B.E. 2508 (1965); Civil Registration Act, B.E. 2534 (1991); Anti-Money Laundering Act, B.E. 2542 (1999); Land Traffic Act, B.E. 2522 (1979); Building Control Act, B.E. 2522 (1979); Condominium Act, B.E. 2522 (1979); Investment Promotion Act, B.E. 2520 (1977); Juvenile and Family Court and Procedure Act, B.E. 2553 (2010); Official Information Act, B.E. 2540 (1997); Arbitration Act, B.E. 2545 (2002)",
+  "name": "Thai law: Constitution of the Kingdom of Thailand, B.E. 2560 (2017); Labour Protection Act, B.E. 2541 (1998); Labour Relations Act, B.E. 2518 (1975); Criminal Code; Civil and Commercial Code; Civil Procedure Code; Criminal Procedure Code; Land Code; Social Security Act, B.E. 2533 (1990); Public Limited Companies Act, B.E. 2535 (1992); Bankruptcy Act, B.E. 2483 (1940); Computer Crime Act, B.E. 2550 (2007); Personal Data Protection Act, B.E. 2562 (2019); Consumer Protection Act, B.E. 2522 (1979); Foreign Business Act, B.E. 2542 (1999); Immigration Act, B.E. 2522 (1979); Securities and Exchange Act, B.E. 2535 (1992); Trade Competition Act, B.E. 2560 (2017); Copyright Act, B.E. 2537 (1994); Patent Act, B.E. 2522 (1979); Trademark Act, B.E. 2534 (1991); Electronic Transactions Act, B.E. 2544 (2001); Administrative Procedure Act, B.E. 2539 (1996); Act on Establishment of Administrative Courts and Administrative Court Procedure, B.E. 2542 (1999); Narcotics Code; Act on Establishment of Labour Courts and Labour Court Procedure, B.E. 2522 (1979); Workmen's Compensation Act, B.E. 2537 (1994); Royal Ordinance on Management of Foreign Workers, B.E. 2560 (2017); Nationality Act, B.E. 2508 (1965); Civil Registration Act, B.E. 2534 (1991); Anti-Money Laundering Act, B.E. 2542 (1999); Land Traffic Act, B.E. 2522 (1979); Building Control Act, B.E. 2522 (1979); Condominium Act, B.E. 2522 (1979); Investment Promotion Act, B.E. 2520 (1977); Juvenile and Family Court and Procedure Act, B.E. 2553 (2010); Official Information Act, B.E. 2540 (1997); Arbitration Act, B.E. 2545 (2002); Act on Offences Arising from the Use of Cheques, B.E. 2534 (1991); Drug Act, B.E. 2510 (1967); Firearms Act, B.E. 2490 (1947)",
   "label": "Thailand",
   "language": "th",
   "acts": [
@@ -41,14 +41,17 @@
     "พระราชบัญญัติส่งเสริมการลงทุน พ.ศ. 2520",
     "พระราชบัญญัติศาลเยาวชนและครอบครัวและวิธีพิจารณาคดีเยาวชนและครอบครัว พ.ศ. 2553",
     "พระราชบัญญัติข้อมูลข่าวสารของราชการ พ.ศ. 2540",
-    "พระราชบัญญัติอนุญาโตตุลาการ พ.ศ. 2545"
+    "พระราชบัญญัติอนุญาโตตุลาการ พ.ศ. 2545",
+    "พระราชบัญญัติว่าด้วยความผิดอันเกิดจากการใช้เช็ค พ.ศ. 2534",
+    "พระราชบัญญัติยา พ.ศ. 2510",
+    "พระราชบัญญัติอาวุธปืน เครื่องกระสุนปืน วัตถุระเบิด และดอกไม้เพลิง พุทธศักราช 2477 (ยกเลิก)"
   ],
   "history": "in-force",
   "history_from": "1926-01-01",
   "record_to": "2026-09-29",
   "built": "2026-11-03",
   "checked_on": "2026-11-03",
-  "record_note": "Checked against the Office of the Council of State (searchlaw.ocs.go.th) on 2026-11-03: every consolidated text (ฉบับปรับปรุง) the OCS publishes for these 38 acts. Texts the OCS consolidated out of order are rebuilt; see README.",
+  "record_note": "Checked against the Office of the Council of State (searchlaw.ocs.go.th) on 2026-11-03: every consolidated text (ฉบับปรับปรุง) the OCS publishes for these 41 acts. Texts the OCS consolidated out of order are rebuilt; see README.",
   "in_force_trailer": "In-force",
   "dates": {
     "commit": "in-force",
