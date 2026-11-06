@@ -1,5 +1,7 @@
 # Thai law, change by change
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Thailand's national law, which global-law reads at `thailand/national/acts/`.
+
 Thai law as a git repository: the Constitution of the Kingdom of Thailand B.E. 2560 (2017)
 (รัฐธรรมนูญแห่งราชอาณาจักรไทย), the Labour Protection Act B.E. 2541 (1998) (พระราชบัญญัติคุ้มครองแรงงาน), and, appended
 since, the Criminal Code (ประมวลกฎหมายอาญา), the Civil and Commercial Code (ประมวลกฎหมายแพ่งและพาณิชย์), the Civil
