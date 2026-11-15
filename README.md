@@ -23,7 +23,8 @@ The text is in Thai, with Thai digits, as the OCS publishes it. An English trans
 
 - **[Ask Claude about Thai law](https://global-law.lexifina.com/v1/try_claude?country=thailand)**: opens Claude with a first question ready.
 - **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=thailand)**: the same question in ChatGPT.
-- **[Call the API in your browser](https://global-law.lexifina.com/v1/search_law?query=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%9C%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B5&jurisdictions=thailand)**: a search of Thai law for "วันหยุดพักผ่อนประจำปี" (annual leave), returned as JSON. See the [documentation here](https://lexifina.com/api/global-law).
+- **[Search Thai law on our site](https://lexifina.com/law?country=thailand&q=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%9C%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B5)**: a search for "วันหยุดพักผ่อนประจำปี" (annual leave), with each provision's text and its versions, no account needed.
+- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%9C%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B5&jurisdiction=thailand)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
 
 Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Thai or in English.
 
