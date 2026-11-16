@@ -1,34 +1,41 @@
-# Thailand: law history in git
+# ประเทศไทย: ประวัติกฎหมายใน git
 
-The law of Thailand as a git history: one file per section, one commit per version on the day it took effect, and the instrument that made each change as the commit's author. `git blame` names the instrument behind every paragraph; `git log` lists every change to a section; picking a date gives the text in force that day.
+**ไทย** · [English](README.en.md)
 
-Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Thailand's national law, which global-law reads at `thailand/national/acts/`.
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="data/th/effort-dark.svg">
+<img alt="กฎหมายไทยในรีโพสิทอรีนี้: สิ่งที่มี การแก้ไขตามปีที่มีผลใช้บังคับ ความครบถ้วนเมื่อเทียบกับแหล่งข้อมูลทางการ และความถูกต้องของสิ่งที่มี" src="data/th/effort-light.svg" width="880">
+</picture>
 
-**What is in it now:** 41 laws as the Office of the Council of State (OCS) consolidates them: the Constitution of B.E. 2560 (2017), six codes (among them the Civil and Commercial Code and the Criminal Code), 33 Acts and one Royal Ordinance, with 373 texts in force from 1926 to 2026. [`REPRODUCE.md`](REPRODUCE.md) lists every act with its number of texts and its first and last days; [`laws.csv`](laws.csv) lists every instrument with its Gazette reference and dates.
+กฎหมายของประเทศไทยในรูปของประวัติ git: หนึ่งไฟล์ต่อหนึ่งมาตรา หนึ่งคอมมิตต่อหนึ่งฉบับในวันที่ฉบับนั้นมีผลใช้บังคับ และกฎหมายที่ทำให้เกิดการเปลี่ยนแปลงแต่ละครั้งเป็นผู้เขียน (author) ของคอมมิต `git blame` ระบุกฎหมายที่อยู่เบื้องหลังทุกวรรค `git log` แสดงการเปลี่ยนแปลงทั้งหมดของมาตราหนึ่ง และการเลือกวันที่จะได้ตัวบทที่ใช้บังคับในวันนั้น
 
-Each act is a folder named in English, one file per section (มาตรา): `labour-protection/s-118.md` is มาตรา ๑๑๘ of the พระราชบัญญัติคุ้มครองแรงงาน พ.ศ. ๒๕๔๑, the Labour Protection Act B.E. 2541 (1998); `labour-protection/s-011-1.md` is มาตรา ๑๑/๑ and `criminal-code/s-277-bis.md` มาตรา ๒๗๗ ทวิ. `title.md` holds the title and preamble, `end/` what the OCS prints after the text (the note of reasons, each amending instrument's transitional provisions), and each act's `README.md` lists its sections and how often each changed.
+เป็นส่วนหนึ่งของ [lexifina/global-law](https://github.com/lexifina/global-law) ซึ่งเป็นประวัติ git เดียวของกฎหมายทุกประเทศ: รีโพสิทอรีนี้คือกฎหมายระดับชาติของประเทศไทย ซึ่ง global-law อ่านที่ `thailand/national/acts/`
 
-The text is in Thai, with Thai digits, as the OCS publishes it. An English translation is not part of this record.
+**สิ่งที่มีอยู่ในขณะนี้:** กฎหมาย 41 ฉบับตามที่สำนักงานคณะกรรมการกฤษฎีกา (สคก.) รวบรวมไว้ ได้แก่ รัฐธรรมนูญ พ.ศ. 2560 (ค.ศ. 2017) ประมวลกฎหมาย 6 ฉบับ (ซึ่งรวมถึงประมวลกฎหมายแพ่งและพาณิชย์และประมวลกฎหมายอาญา) พระราชบัญญัติ 33 ฉบับ และพระราชกำหนด 1 ฉบับ โดยมีตัวบทที่ใช้บังคับ 373 ฉบับ ตั้งแต่ ค.ศ. 1926 ถึง ค.ศ. 2026 [`REPRODUCE.md`](REPRODUCE.md) แสดงกฎหมายทุกฉบับพร้อมจำนวนตัวบทและวันแรกและวันสุดท้าย [`laws.csv`](laws.csv) แสดงกฎหมายทุกฉบับที่ทำให้เกิดการเปลี่ยนแปลงพร้อมการอ้างอิงราชกิจจานุเบกษาและวันที่
 
-## Questions as git commands
+กฎหมายแต่ละฉบับเป็นโฟลเดอร์ที่ตั้งชื่อเป็นภาษาอังกฤษ หนึ่งไฟล์ต่อหนึ่งมาตรา: `labour-protection/s-118.md` คือ มาตรา ๑๑๘ แห่งพระราชบัญญัติคุ้มครองแรงงาน พ.ศ. ๒๕๔๑ `labour-protection/s-011-1.md` คือ มาตรา ๑๑/๑ และ `criminal-code/s-277-bis.md` คือ มาตรา ๒๗๗ ทวิ `title.md` เก็บชื่อและคำปรารภ `end/` เก็บสิ่งที่ สคก. พิมพ์ไว้ต่อท้ายตัวบท (หมายเหตุเหตุผลในการประกาศใช้ บทเฉพาะกาลของกฎหมายที่แก้ไขแต่ละฉบับ) และ `README.md` ของกฎหมายแต่ละฉบับแสดงมาตราต่าง ๆ และจำนวนครั้งที่แต่ละมาตราถูกแก้ไข
 
-| Question | Command |
+ตัวบทเป็นภาษาไทยและใช้เลขไทยตามที่ สคก. เผยแพร่ บันทึกนี้ไม่มีคำแปลภาษาอังกฤษ
+
+## คำถามในรูปคำสั่ง git
+
+| คำถาม | คำสั่ง |
 | --- | --- |
-| Every change to section 118 (severance pay) of the Labour Protection Act | `git log -p --word-diff -- labour-protection/s-118.md` |
-| Which instrument wrote each line of section 118? | `git blame labour-protection/s-118.md` |
-| Every version of the Labour Protection Act, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- labour-protection ':!labour-protection/README.md'` |
-| Section 118 as in force on 1 January 2019 | `python tools/thai.py 2019-01-01 labour-protection 118` |
+| การเปลี่ยนแปลงทั้งหมดของมาตรา 118 (ค่าชดเชย) แห่งพระราชบัญญัติคุ้มครองแรงงาน | `git log -p --word-diff -- labour-protection/s-118.md` |
+| กฎหมายฉบับใดเขียนแต่ละบรรทัดของมาตรา 118 | `git blame labour-protection/s-118.md` |
+| ทุกฉบับของพระราชบัญญัติคุ้มครองแรงงาน พร้อมวันที่แต่ละฉบับมีผลใช้บังคับ | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- labour-protection ':!labour-protection/README.md'` |
+| มาตรา 118 ตามที่ใช้บังคับในวันที่ 1 มกราคม 2019 | `python tools/thai.py 2019-01-01 labour-protection 118` |
 
-**Outside git**, we also host this record publicly, for free:
+**นอก git** เรายังเผยแพร่บันทึกนี้ต่อสาธารณะโดยไม่มีค่าใช้จ่าย:
 
-- **[Ask Claude about Thai law](https://global-law.lexifina.com/v1/try_claude?country=thailand)**: opens Claude with a first question ready.
-- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=thailand)**: the same question in ChatGPT.
-- **[Search Thai law on our site](https://lexifina.com/law?country=thailand&q=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%9C%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B5)**: a search for "วันหยุดพักผ่อนประจำปี" (annual leave), with each provision's text and its versions, no account needed.
-- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%9C%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B5&jurisdiction=thailand)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
+- **[ถาม Claude เกี่ยวกับกฎหมายไทย](https://global-law.lexifina.com/v1/try_claude?country=thailand)**: เปิด Claude พร้อมคำถามแรกที่เตรียมไว้
+- **[ถาม ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=thailand)**: คำถามเดียวกันใน ChatGPT
+- **[ค้นหากฎหมายไทยบนเว็บไซต์ของเรา](https://lexifina.com/law?country=thailand&q=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%9C%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B5)**: ผลการค้นหา "วันหยุดพักผ่อนประจำปี" พร้อมตัวบทของแต่ละบทบัญญัติและฉบับต่าง ๆ ของบทบัญญัตินั้น ไม่ต้องมีบัญชีผู้ใช้
+- **[REST API สำหรับนักพัฒนา](https://global-law.lexifina.com/v1/search_law?query=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%9C%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B5&jurisdiction=thailand)**: การค้นหาเดียวกันในรูป JSON โดยไม่ต้องใช้คีย์ ดู[เอกสารประกอบได้ที่นี่](https://lexifina.com/api/global-law)
 
-Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Thai or in English.
+ผู้ช่วยทั้งสองอ่านบันทึกนี้ผ่านตัวเชื่อมต่อ Global law ที่ไม่มีค่าใช้จ่าย (MCP, `https://global-law.lexifina.com/mcp`) ในการใช้ครั้งแรก แชตจะให้ลิงก์สำหรับเพิ่มตัวเชื่อมต่อนั้น ถามเป็นภาษาไทยหรือภาษาอังกฤษก็ได้
 
-**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+**โฮสต์เองได้ง่าย** ใช้เพียง git และ Python และเครื่องมือทำงานบนเครื่องของคุณเอง:
 
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
@@ -36,53 +43,55 @@ python3 tools/countries.py add thailand/national/acts
 python3 tools/law.py show 2026-01-01 thailand/national/acts/labour-protection/s-118.md
 ```
 
-Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
+เมื่อเปิดใน Claude Code, Cursor, VS Code หรือ Codex โคลนนี้จะเริ่มเซิร์ฟเวอร์ MCP ภายในเครื่องที่มีเครื่องมือชุดเดียวกันด้วย ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md))
 
-## Dates
+## วันที่
 
-Each commit is dated at noon, Asia/Bangkok, on the day the version took effect, and carries it in its `In-force:` trailer:
+คอมมิตแต่ละรายการลงวันที่เวลาเที่ยงวัน (Asia/Bangkok) ของวันที่ฉบับนั้นมีผลใช้บังคับ และบันทึกวันนั้นไว้ในเทรลเลอร์ `In-force:`:
 
-- the day the OCS gives each text: an act takes effect on the day its section 2 sets, often the day after its publication in the Royal Gazette (ราชกิจจานุเบกษา); `Promulgated:` and `Gazette:` give that publication as the OCS prints it;
-- where the OCS consolidated an amendment after one that took effect later, each one's changes are applied in the order they took effect, and the commit says so (`Text: rebuilt ...`);
-- until B.E. 2483 the Thai year began on 1 April, and the OCS puts 1 January to 31 March of those years a year early; here they are in the right year (the Civil and Commercial Code takes effect on 1926-01-01);
-- git cannot store dates before 1970, so the 40 earlier commits are dated 1 January 1970, with the real day in `In-force:`. Ask for a date with `tools/thai.py`, not `git log --before`.
+- วันที่ สคก. ระบุสำหรับตัวบทแต่ละฉบับ: พระราชบัญญัติมีผลใช้บังคับในวันที่มาตรา 2 ของพระราชบัญญัตินั้นกำหนด ซึ่งมักเป็นวันถัดจากวันประกาศในราชกิจจานุเบกษา `Promulgated:` และ `Gazette:` ระบุการประกาศนั้นตามที่ สคก. พิมพ์ไว้
+- ในกรณีที่ สคก. รวบรวมการแก้ไขฉบับหนึ่งไว้หลังจากฉบับที่มีผลใช้บังคับภายหลัง การเปลี่ยนแปลงของแต่ละฉบับจะนำมาใช้ตามลำดับวันที่มีผลใช้บังคับ และคอมมิตจะระบุไว้ (`Text: rebuilt ...`)
+- จนถึง พ.ศ. 2483 ปีของไทยเริ่มต้นในวันที่ 1 เมษายน และ สคก. นำวันที่ 1 มกราคมถึง 31 มีนาคมของปีเหล่านั้นไปไว้เร็วกว่าความจริงหนึ่งปี ในที่นี้วันที่เหล่านั้นอยู่ในปีที่ถูกต้อง (ประมวลกฎหมายแพ่งและพาณิชย์มีผลใช้บังคับในวันที่ 1926-01-01)
+- git ไม่สามารถเก็บวันที่ก่อน ค.ศ. 1970 ได้ ดังนั้นคอมมิต 40 รายการที่เก่ากว่านั้นจึงลงวันที่ 1 มกราคม 1970 โดยมีวันที่จริงอยู่ใน `In-force:` การสอบถามตามวันที่ให้ใช้ `tools/thai.py` ไม่ใช่ `git log --before`
 
-Each act's first text is credited to the act itself, and each change to the instrument that made it (an amending act, royal decree or NCPO order), with an address from its Gazette reference that cannot exist (`rg-136-43a-21@ratchakitcha.invalid`). The OCS names the amending act for 263 of the 332 changes; 64 are credited to the instrument that day's consolidation newly reprints, and 5 with neither to the OCS (`Evidence:` trailer). The committer is always Lexifina.
+ตัวบทฉบับแรกของกฎหมายแต่ละฉบับให้เครดิตแก่กฎหมายฉบับนั้นเอง และการเปลี่ยนแปลงแต่ละครั้งให้เครดิตแก่กฎหมายที่ทำให้เกิดการเปลี่ยนแปลงนั้น (พระราชบัญญัติแก้ไขเพิ่มเติม พระราชกฤษฎีกา หรือคำสั่ง คสช.) โดยใช้ที่อยู่ที่สร้างจากการอ้างอิงราชกิจจานุเบกษาซึ่งไม่อาจมีอยู่จริง (`rg-136-43a-21@ratchakitcha.invalid`) สคก. ระบุกฎหมายที่แก้ไขสำหรับการเปลี่ยนแปลง 263 รายการจาก 332 รายการ 64 รายการให้เครดิตแก่กฎหมายที่การรวบรวมของวันนั้นพิมพ์ขึ้นใหม่ และ 5 รายการที่ไม่มีทั้งสองอย่างให้เครดิตแก่ สคก. (เทรลเลอร์ `Evidence:`) ผู้คอมมิต (committer) คือ Lexifina เสมอ
 
-## How it is checked
+## วิธีการตรวจสอบ
 
-- `tools/build/check_repo.py` reads every text in force back from git on its day and compares it with the OCS text, file by file and, independently of the parser, letter by letter against the HTML the OCS serves.
-- Each growth is appended a second time from the same head into a scratch clone and must give the same hashes; [`REPRODUCE.md`](REPRODUCE.md) records the last check and rebuild.
-- `tools/build/test_repo.py` checks that blame, the dated tool and the commands above work.
-- History is append-only: acts added after the first build come after it, each in in-force order, and no published commit is rewritten.
+- `tools/build/check_repo.py` อ่านตัวบทที่ใช้บังคับทุกฉบับกลับจาก git ในวันของตัวบทนั้น และเปรียบเทียบกับตัวบทของ สคก. ทีละไฟล์ และเปรียบเทียบทีละตัวอักษรกับ HTML ที่ สคก. ให้บริการ โดยไม่อาศัยตัวแยกวิเคราะห์ (parser)
+- การเพิ่มข้อมูลแต่ละครั้งจะถูกต่อท้ายซ้ำอีกครั้งจาก head เดียวกันลงในโคลนสำหรับทดลอง และต้องได้แฮชเดียวกัน [`REPRODUCE.md`](REPRODUCE.md) บันทึกการตรวจสอบและการสร้างใหม่ครั้งล่าสุด
+- `tools/build/test_repo.py` ตรวจสอบว่า blame เครื่องมือตามวันที่ และคำสั่งข้างต้นทำงานได้
+- ประวัติมีแต่การต่อท้ายเท่านั้น: กฎหมายที่เพิ่มหลังการสร้างครั้งแรกจะอยู่ต่อจากนั้น แต่ละฉบับเรียงตามลำดับวันที่มีผลใช้บังคับ และไม่มีการเขียนคอมมิตที่เผยแพร่แล้วใหม่
 
-## What it does not show
+## สิ่งที่ไม่ได้แสดง
 
-- **The official text.** The OCS's consolidations are an aid; the official text is the one published in the Royal Gazette, which is not read here.
-- **Changes that leave the words alone**: ministerial regulations made under an act, court rulings, commencement conditions.
-- **Earlier constitutions.** The Constitution starts with its text of 2017.
-- **The Firearms Act.** Its folder holds only the OCS's notice that the Act of B.E. 2477 (1934) is repealed, pointing to the Royal Gazette; the Act of B.E. 2490 (1947) is not here.
-- **Most Thai law.** Other Acts, royal decrees, ministerial regulations, local ordinances, court decisions and bills are not here.
+- **ตัวบทที่เป็นทางการ** ฉบับรวบรวมของ สคก. เป็นเพียงเครื่องช่วย ตัวบทที่เป็นทางการคือตัวบทที่ประกาศในราชกิจจานุเบกษา ซึ่งไม่ได้อ่านในที่นี้
+- **การเปลี่ยนแปลงที่ไม่ได้แก้ถ้อยคำ**: กฎกระทรวงที่ออกตามพระราชบัญญัติ คำวินิจฉัยของศาล เงื่อนไขการเริ่มใช้บังคับ
+- **รัฐธรรมนูญฉบับก่อน ๆ** รัฐธรรมนูญเริ่มต้นที่ตัวบท พ.ศ. 2560 (ค.ศ. 2017)
+- **พระราชบัญญัติอาวุธปืน** โฟลเดอร์ของพระราชบัญญัตินี้มีเพียงประกาศของ สคก. ว่าพระราชบัญญัติ พ.ศ. 2477 (ค.ศ. 1934) ถูกยกเลิกแล้ว โดยอ้างถึงราชกิจจานุเบกษา พระราชบัญญัติ พ.ศ. 2490 (ค.ศ. 1947) ไม่มีอยู่ในที่นี้
+- **กฎหมายไทยส่วนใหญ่** พระราชบัญญัติอื่น ๆ พระราชกฤษฎีกา กฎกระทรวง ข้อบัญญัติท้องถิ่น คำพิพากษาของศาล และร่างกฎหมาย ไม่มีอยู่ในที่นี้
 
-## Sources
+## แหล่งที่มา
 
-| Source | Kind | Past versions | Notes |
+| แหล่งที่มา | ประเภท | ฉบับในอดีต | หมายเหตุ |
 | --- | --- | --- | --- |
-| [Office of the Council of State: law database](https://searchlaw.ocs.go.th/council-of-state/) (สำนักงานคณะกรรมการกฤษฎีกา) | Consolidated texts of Thai laws | yes, the act as enacted, each amending act and a consolidated text for each day the act changed | Not the official text; Gazette references as its footnotes print them |
+| [สำนักงานคณะกรรมการกฤษฎีกา: ฐานข้อมูลกฎหมาย](https://searchlaw.ocs.go.th/council-of-state/) (สำนักงานคณะกรรมการกฤษฎีกา) | ตัวบทกฎหมายไทยฉบับรวบรวม | มี ได้แก่ กฎหมายตามที่ตราขึ้น กฎหมายที่แก้ไขแต่ละฉบับ และตัวบทฉบับรวบรวมสำหรับทุกวันที่กฎหมายนั้นเปลี่ยนแปลง | ไม่ใช่ตัวบทที่เป็นทางการ การอ้างอิงราชกิจจานุเบกษาเป็นไปตามที่เชิงอรรถของฐานข้อมูลพิมพ์ไว้ |
 
-## Licence
+## สัญญาอนุญาต
 
-See [`LICENSE`](LICENSE). The texts of Thai laws are not copyright works: section 7 of the Copyright Act B.E. 2537 (1994) excludes the Constitution, laws and other official texts of the state. The OCS publishes no terms of use for its database. The arrangement, commit messages, tables, documentation and tools are by Lexifina.
+ดู [`LICENSE`](LICENSE) ตัวบทกฎหมายไทยไม่ใช่งานอันมีลิขสิทธิ์: มาตรา 7 แห่งพระราชบัญญัติลิขสิทธิ์ พ.ศ. 2537 (ค.ศ. 1994) ยกเว้นรัฐธรรมนูญ กฎหมาย และข้อความทางราชการอื่น ๆ ของรัฐ สคก. ไม่ได้ประกาศข้อกำหนดการใช้งานฐานข้อมูลของตน การจัดเรียง ข้อความคอมมิต ตาราง เอกสารประกอบ และเครื่องมือ จัดทำโดย Lexifina
 
-No AI model wrote or edited legal text, and none runs when the history is built; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+ไม่มีโมเดล AI ใดเขียนหรือแก้ไขตัวบทกฎหมาย และไม่มีโมเดลใดทำงานขณะสร้างประวัติ สคริปต์เขียนขึ้นโดยโมเดล AI (ดู [`REPRODUCE.md`](REPRODUCE.md))
 
-## More
+ข้อความนี้แปลจากฉบับภาษาอังกฤษ ([README.en.md](README.en.md)) หากมีความแตกต่าง ให้ถือฉบับภาษาอังกฤษเป็นหลัก
 
-From [lexifina/global-law](https://github.com/lexifina/global-law):
+## ข้อมูลเพิ่มเติม
 
-- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
-- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
-- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
-- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
-- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
-- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
+จากรีโพสิทอรี [lexifina/global-law](https://github.com/lexifina/global-law) (หน้าภาษาอังกฤษ):
+
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): ความสามารถทั้งหมด และสิ่งที่คลังข้อมูลแต่ละแห่งต้องรองรับ (`git blame`, `law.py`, เครื่องมือ MCP)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): คำถามที่พบบ่อย · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): การเสนอแก้ไข · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): เซิร์ฟเวอร์ MCP · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): วิธีที่สร้างขึ้น · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): ความเป็นปัจจุบันของคลังข้อมูลแต่ละแห่ง · [การติดตาม](https://github.com/lexifina/global-law/tree/main/monitoring): การอัปเดตทำงานอยู่หรือไม่ · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): วิธีเฝ้าดูการเปลี่ยนแปลงของแหล่งทางการแต่ละแห่ง
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): ความเร็วของเครื่องมือตามที่วัดได้
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): แผนภูมิและความเชื่อมโยงข้ามกฎหมายทั่วโลก
+- [ช่องโหว่](https://github.com/lexifina/global-law/tree/main/vulnerabilities): ข้อผิดพลาดในกฎหมายตามที่ประกาศใช้
