@@ -62,6 +62,7 @@ Each act's first text is credited to the act itself, and each change to the inst
 - Each growth is appended a second time from the same head into a scratch clone and must give the same hashes; [`REPRODUCE.md`](REPRODUCE.md) records the last check and rebuild.
 - `tools/build/test_repo.py` checks that blame, the dated tool and the commands above work.
 - History is append-only: acts added after the first build come after it, each in in-force order, and no published commit is rewritten.
+- [vulnerabilities/](vulnerabilities/README.en.md): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -82,6 +83,10 @@ Each act's first text is credited to the act itself, and each change to the inst
 See [`LICENSE`](LICENSE). The texts of Thai laws are not copyright works: section 7 of the Copyright Act B.E. 2537 (1994) excludes the Constitution, laws and other official texts of the state. The OCS publishes no terms of use for its database. The arrangement, commit messages, tables, documentation and tools are by Lexifina.
 
 No AI model wrote or edited legal text, and none runs when the history is built; the scripts were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/README.en.md): charts drawn from this repository. Not drawn yet.
 
 ## More
 
